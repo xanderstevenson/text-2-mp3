@@ -5,7 +5,7 @@
 
 1. Clone this repository
 ```
-git clone (https://github.com/xanderstevenson/text-2-mp3
+git clone https://github.com/xanderstevenson/text-2-mp3
 ```
 
 
