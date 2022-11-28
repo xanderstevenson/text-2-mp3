@@ -48,4 +48,6 @@ MP3 file created at ////text-2-mp3/mp3s/readthis.mp3
 Audio sample will play for 3 seconds
 ```
 
+*** For a long text, such as several pages, it could take a few minuted for the mp3 file to be rendered.
+
 You can put the relative or absolute file path. MP3s are always saved to 'mp3s' folder one level down from python3 text-2-mp3.py
