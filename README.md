@@ -51,3 +51,6 @@ Audio sample will play for 3 seconds
 *** For a long text, such as several pages, it could take a few minuted for the mp3 file to be rendered.
 
 You can put the relative or absolute file path. MP3s are always saved to 'mp3s' folder one level down from python3 text-2-mp3.py
+
+
+Credit: I borrowed much from John Capodianco's wiktrola project for this: https://www.youtube.com/watch?v=HbHaZRWq3_I
