@@ -8,28 +8,31 @@
 git clone (https://github.com/xanderstevenson/text-2-mp3
 ```
 
-2. cd into test-2-mp3
 
+2. cd into test-2-mp3
+```
 cd test-2-mp3
+```
 
 
 3. Create and activate virtual environment
-
+```
 python3 -m venv venv
 
 source venv/bin/activate # for Mac and Linux
 source venv/Scripts/activate # for Windows
+```
 
 
 4. Install requirements
-
+```
 pip install -r requirements.txt
-
+```
 
 5. Run Program
-
+```
 python3 text-2-mp3.py
-
+```
 
 WELCOME to TEXT-2-MP3
 
