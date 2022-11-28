@@ -32,7 +32,7 @@ pip install -r requirements.txt
 5. Run Program
 ```
 python3 text-2-mp3.py
-```
+
 
 WELCOME to TEXT-2-MP3
 
@@ -46,4 +46,6 @@ MP3 file created at ////text-2-mp3/mp3s/readthis.mp3
 
 
 Audio sample will play for 3 seconds
+```
 
+You can put the relative or absolute file path. MP3s are always saved to 'mp3s' folder one level down from python3 text-2-mp3.py
