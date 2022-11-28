@@ -11,7 +11,7 @@ git clone (https://github.com/xanderstevenson/text-2-mp3
 
 2. cd into test-2-mp3
 ```
-cd test-2-mp3
+cd text-2-mp3
 ```
 
 
