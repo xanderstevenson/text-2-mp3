@@ -1,9 +1,17 @@
+certifi==2022.9.24
+charset-normalizer==2.0.12
 click==8.0.4
 commonmark==0.9.1
 dataclasses==0.8
+gTTS==2.2.4
+idna==3.4
 importlib-metadata==4.8.3
+pygame==2.1.2
 Pygments==2.13.0
+requests==2.27.1
 rich==12.6.0
 rich-click==1.2.1
+six==1.16.0
 typing-extensions==4.1.1
+urllib3==1.26.13
 zipp==3.6.0

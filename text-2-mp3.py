@@ -1,9 +1,13 @@
 import sys
+import os
 import rich_click as click
 from gtts import gTTS
 import ntpath
-import pygame
 import time
+import contextlib
+with contextlib.redirect_stdout(None):
+    import pygame
+
 
 class GetAudio:
     def __init__(
@@ -11,7 +15,7 @@ class GetAudio:
         path,
     ):
 
-        self.path = path
+        self.path = path 
 
     def create_mp3(self):
         language = "en-US"
@@ -28,28 +32,24 @@ class GetAudio:
                     .replace(".rtf", "")
                     .replace(".md", "")
                 )
-                mp3.save(f"{file_name}.mp3")
+                mp3.save(f"{ sys.path[0] }/mp3s/{file_name}.mp3")
                 click.secho(
-                    f"MP3 file created at { sys.path[0] }/{file_name}.mp3", fg="green"
+                    f"\n\nMP3 file created at { sys.path[0] }/mp3s/{file_name}.mp3\n\n", fg="green"
                 )
-                # playsound(f"{file_name}.mp3")
+                pygame.mixer.init()  # initialize mixer module
+                pygame.mixer.music.load(f"{ sys.path[0] }/mp3s/{file_name}.mp3")
+                pygame.mixer.music.play()
+                print("Audio sample will play for 3 seconds\n\n")
+                time.sleep(3)
         except FileNotFoundError:
             print(
-                "A file named '{}' does not exist. Please try again.".format(self.path)
+                "\n\nERROR\n\nA file named '{}' does not exist. Please try again.\n\n".format(self.path)
             )
-
-
-        pygame.mixer.init()  # initialize mixer module
-        pygame.mixer.music.load(f"{file_name}.mp3")
-        pygame.mixer.music.play()
-        print("Audio sample will play for 3 seconds")
-        time.sleep(3)
-
 
 @click.command()
 @click.option(
     "--path",
-    prompt="Enter the path of the file to convert text to speech (.txt, .rtf or .md)",
+    prompt="\n\nWELCOME to TEXT-2-MP3\n\nEnter the path of the file to convert text to speech (.txt, .rtf or .md)\n\n",
     help="Enter the path of the file to convert text to speech (.txt, .rtf or .md)",
     required=True,
 )
