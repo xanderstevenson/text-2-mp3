@@ -1,9 +1,9 @@
 import sys
 import rich_click as click
-import webbrowser
 from gtts import gTTS
 import ntpath
-
+import pygame
+import time
 
 class GetAudio:
     def __init__(
@@ -25,28 +25,35 @@ class GetAudio:
                 # strip file type extension from name
                 file_name = (
                     file_name.replace(".txt", "")
-                    .replace(".docx", "")
-                    .replace(".doc", "")
                     .replace(".rtf", "")
+                    .replace(".md", "")
                 )
                 mp3.save(f"{file_name}.mp3")
                 click.secho(
                     f"MP3 file created at { sys.path[0] }/{file_name}.mp3", fg="green"
                 )
-                webbrowser.open(f"{file_name}.mp3")
+                # playsound(f"{file_name}.mp3")
         except FileNotFoundError:
             print(
                 "A file named '{}' does not exist. Please try again.".format(self.path)
             )
 
 
+        pygame.mixer.init()  # initialize mixer module
+        pygame.mixer.music.load(f"{file_name}.mp3")
+        pygame.mixer.music.play()
+        print("Audio sample will play for 3 seconds")
+        time.sleep(3)
+
+
 @click.command()
 @click.option(
     "--path",
-    prompt="Enter the path of the file yo convert text to speech",
-    help="Enter the path of the file yo convert text to speech",
+    prompt="Enter the path of the file to convert text to speech (.txt, .rtf or .md)",
+    help="Enter the path of the file to convert text to speech (.txt, .rtf or .md)",
     required=True,
 )
+
 def cli(path):
     invoke_class = GetAudio(path)
     invoke_class.create_mp3()
@@ -54,3 +61,5 @@ def cli(path):
 
 if __name__ == "__main__":
     cli()
+
+
