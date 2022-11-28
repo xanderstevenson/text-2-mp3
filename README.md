@@ -52,7 +52,7 @@ Audio sample will play for 3 seconds
 
 You can put the relative or absolute file path. MP3s are always saved to 'mp3s' folder one level down from python3 text-2-mp3.py
 
-Tip: When pasting from a web page or Word doc, delete the images or it will read the, often long, links,
+Tip: When pasting from a web page or Word doc, delete the image file names or it will read them (they are often long).
 
 
 Credit: I borrowed much from John Capobianco's wiktrola project for this: https://www.youtube.com/watch?v=HbHaZRWq3_I
