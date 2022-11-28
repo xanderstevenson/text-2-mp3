@@ -55,4 +55,4 @@ You can put the relative or absolute file path. MP3s are always saved to 'mp3s' 
 Tip: When pasting from a web page or Word doc, delete the images or it will read the, often long, links,
 
 
-Credit: I borrowed much from John Capodianco's wiktrola project for this: https://www.youtube.com/watch?v=HbHaZRWq3_I
+Credit: I borrowed much from John Capobianco's wiktrola project for this: https://www.youtube.com/watch?v=HbHaZRWq3_I
