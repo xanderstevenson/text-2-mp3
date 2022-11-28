@@ -28,6 +28,7 @@ source venv/Scripts/activate # for Windows
 ```
 pip install -r requirements.txt
 ```
+*** requirments sometimes vary per OS, so please install other dependencies as your system advises.
 
 5. Run Program
 ```
