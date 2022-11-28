@@ -6,7 +6,6 @@ Where We Are Now
 
 We can all be grateful for the recent developments in cybersecurity involving observability and AI, which have increased visibility and granular control, thus greatly improving threat detection and response. The Shift-left paradigm and the programmability and automation introduced by modern DevOps have facilitated increased security throughout the CI/CD pipeline via automated tests for configuration, compliance, and other factors, therefore reducing the opportunity for human error as well.
 
-alexstev_0-1666962856110.png
 
 Basic DevOps Lifecycle
 
@@ -20,20 +19,14 @@ These DevOps tools and approach go a very long way toward securing our apps and 
 
  
 
- 
-
 What’s Needed: DevSecOps
  
 
 DevSecOps is an aspect or offshoot of DevOps which facilitates collaboration between the traditionally siloed IT teams mentioned just above. DevSecOps is the practice of baking security into the DevOps Lifecycle and CI/CD pipeline. We’ve already discussed how DevOps, by necessity, includes security teams in the SDLC process. DevSecOps, by incorporating DevOps values into software security, ensures security becomes an active, integrated part of the development process, at every step.
 
- 
-
-alexstev_1-1666962856134.png
 
 Basic DevSecOps: Continuous Security in the DevOps Lifecycle
 
- 
 
  
 
@@ -82,9 +75,6 @@ ASOC tools combine the capabilities of application vulnerability correlation (AV
 
 With DevSecOps, security, via these tools, should be applied to each phase of the typical DevOps lifecycle: plan, build, test, deploy, operate, and observe.
 
- 
-
-alexstev_0-1666964719230.png
 
 DevSecOps Lifecycle and Tool Implementation
 
