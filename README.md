@@ -4,9 +4,9 @@
 
 
 1. Clone this repository
-
+```
 git clone (https://github.com/xanderstevenson/text-2-mp3
-
+```
 
 2. cd into test-2-mp3
 
