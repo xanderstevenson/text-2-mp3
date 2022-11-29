@@ -97,7 +97,7 @@ class GetAudio:
         5. English (India)\n\
         6. English (Ireland)\n\
         7. English (South Africa)\n\n",
-    help="Enter",
+    help="Please choose an English accent",
     required=True,
 )
 
