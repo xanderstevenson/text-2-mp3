@@ -60,7 +60,7 @@ Please choose an English Accent (type a number and hit ENTER)
 : 4
 
 
-MP3 file created at /Users/xander/Documents/CiscoDevNet/code/mess-around/text-2-mp3/mp3s/readthis.mp3
+MP3 file created at /text-2-mp3/mp3s/readthis.mp3
 
 
 Audio sample will play for 3 seconds
