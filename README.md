@@ -2,6 +2,8 @@
 
 ## Python program to convert a text file into an MP3, with choice of English language accent
 
+***Python3 is required
+
 
 1. Clone this repository
 ```
