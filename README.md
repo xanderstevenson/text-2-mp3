@@ -40,12 +40,23 @@ python3 text-2-mp3.py
 WELCOME to TEXT-2-MP3
 
 Enter the path of the file to convert text to speech (.txt, .rtf or .md)
-:
 
-readthis.txt
+: readthis.txt
+
+Please choose an English Accent (type a number and hit ENTER)
+
+        1. English (Australia)
+        2. English (United Kingdom)
+        3. English (United States)
+        4. English (Canada)
+        5. English (India)
+        6. English (Ireland)
+        7. English (South Africa)
+
+: 4
 
 
-MP3 file created at ////text-2-mp3/mp3s/readthis.mp3
+MP3 file created at /Users/xander/Documents/CiscoDevNet/code/mess-around/text-2-mp3/mp3s/readthis.mp3
 
 
 Audio sample will play for 3 seconds
