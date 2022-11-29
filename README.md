@@ -2,7 +2,7 @@
 
 ## Python program to convert a text file into an MP3, with choice of English language accent
 
-***Python3 is required
+*Python3 is required
 
 
 1. Clone this repository
@@ -64,11 +64,11 @@ MP3 file created at /Users/xander/Documents/CiscoDevNet/code/mess-around/text-2-
 Audio sample will play for 3 seconds
 ```
 
-*** For a long text, such as several pages, it could take a few minuted for the mp3 file to be rendered.
+* For a long text, such as several pages, it could take a few minuted for the mp3 file to be rendered.
 
-You can put the relative or absolute file path. MP3s are always saved to 'mp3s' folder one level down from python3 text-2-mp3.py
+- You can put the relative or absolute file path. MP3s are always saved to 'mp3s' folder one level down from python3 text-2-mp3.py
 
-Tip: When pasting from a web page or Word doc, delete the image file names or it will read them (they are often long).
+- Tip: When pasting from a web page or Word doc, delete the image file names or it will read them (they are often long).
 
 
-Credit: Much was borrowed from John Capobianco's wiktrola project for this: https://www.youtube.com/watch?v=HbHaZRWq3_I
+- Credit: Much was borrowed from John Capobianco's wiktrola project for this: https://www.youtube.com/watch?v=HbHaZRWq3_I
