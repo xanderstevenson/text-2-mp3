@@ -1,6 +1,6 @@
 # text-2-mp3
 
-## Python program to convert a text file into an MP3, with choice of English language accent
+## Python program to convert an English text file into an MP3, with choice of English language accent
 
 *Python3 is required
 
