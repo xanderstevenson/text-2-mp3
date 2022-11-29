@@ -89,7 +89,7 @@ class GetAudio:
 # Prompt user for accent input, store as 'accent'
 @click.option(
     "--accent",
-    prompt="\nPlease choose an English Accent (type a number and hit ENTER)\n\n\
+    prompt="\nPlease choose an English accent (type a number and hit ENTER)\n\n\
         1. English (Australia)\n\
         2. English (United Kingdom)\n\
         3. English (United States)\n\
