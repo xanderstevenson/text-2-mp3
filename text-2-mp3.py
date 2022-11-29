@@ -19,30 +19,23 @@ class GetAudio:
         accent,
     ):
         self.path = path
-
+        # function to assign accent code based on numerical choice
         def match_accent(accent):
             match accent:
                 case "1":
                     return "com.au"
-
                 case "2":
                     return "co.uk"
-
                 case "3":
                     return "com"
-
                 case "4":
                     return "ca"
-
                 case "5":
                     return "co.in"
-
                 case "6":
                     return "ie"
-
                 case "7":
                     return "co.za"
-
                 case _:
                     return "com"
 
@@ -51,7 +44,7 @@ class GetAudio:
     # main function
     def create_mp3(self):
         language = "en"
-        # load text, conver to mp3, save file and play sample for user
+        # load text, convert to mp3, save file and play sample for user
         try:
             with open(self.path) as f:
                 the_text = f.read()
