@@ -5,18 +5,56 @@ on: push
 env:
   DEVOPS_DIR: devops
 
+name: On Push Run
+
+on: push
+
+env:
+  DEVOPS_DIR: devops
+
 jobs:
-  hello-world:
-    name: Hello world
+  pre_job:
     runs-on: ubuntu-latest
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+      paths_result: ${{ steps.skip_check.outputs.paths_result }}
+    steps:
+      - id: skip_check
+        uses: fkirc/skip-duplicate-actions@v5
+        with:
+          paths_filter: |
+            files-to-read:
+              paths_ignore:
+                - '**'
+              paths:
+                - '**/files-to-read'
+
+          # Can be mixed with the "global" 'paths_ignore' / 'paths' options, for example:
+          # paths_ignore: '["**/README.md"]'
+
+  frontend:
+    needs: pre_job
+    # If 'skip-duplicate-actions' terminates before the paths checks are performed (for example, when a successful duplicate run has
+    # been found) 'paths_result' outputs an empty object ('{}'). This can be easily intercepted in the if condition of a job
+    # by checking the result of the "global" 'should_skip' output first.
+    if: needs.pre_job.outputs.should_skip != 'true' || !fromJSON(needs.pre_job.outputs.paths_result).files-to-read.should_skip
+    # ...
+
+
+
+
     steps:
     - name: Check-out devops repository
       uses: actions/checkout@v2
       with:
-        repository: xanderstevenson/devops
+        repository: jcdan3/devops
 #         token: ${{ secrets.GITHUB_TOKEN }}
         path: ${{ env.DEVOPS_DIR }}
 
     - name: Hello World
       run: python ${{ env.DEVOPS_DIR }}/hello_world.py
       shell: sh
+
+
+
+
