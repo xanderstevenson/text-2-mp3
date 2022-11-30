@@ -25,7 +25,7 @@ jobs:
           # Can be mixed with the "global" 'paths_ignore' / 'paths' options, for example:
           # paths_ignore: '["**/README.md"]'
 
-  frontend:
+  files-to-read:
     needs: pre_job
     # If 'skip-duplicate-actions' terminates before the paths checks are performed (for example, when a successful duplicate run has
     # been found) 'paths_result' outputs an empty object ('{}'). This can be easily intercepted in the if condition of a job
