@@ -5,13 +5,6 @@ on: push
 env:
   DEVOPS_DIR: devops
 
-name: On Push Run
-
-on: push
-
-env:
-  DEVOPS_DIR: devops
-
 jobs:
   pre_job:
     runs-on: ubuntu-latest
