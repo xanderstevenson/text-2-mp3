@@ -1,4 +1,4 @@
-name: On Push Run
+name: On Push to /file-to-read, Run
 
 on:
   push:
