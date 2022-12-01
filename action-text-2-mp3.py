@@ -63,12 +63,12 @@ class GetAudio:
                     f"\n\nMP3 file created at { sys.path[0] }/mp3s/{file_name}.mp3\n\n",
                     fg="green",
                 )
-                # Automatically play audio sample and alert user
-                pygame.mixer.init()  # initialize mixer module
-                pygame.mixer.music.load(f"{ sys.path[0] }/mp3s/{file_name}.mp3")
-                pygame.mixer.music.play()
-                print("Audio sample will play for 3 seconds\n\n")
-                time.sleep(3)
+#                 # Automatically play audio sample and alert user
+#                 pygame.mixer.init()  # initialize mixer module
+#                 pygame.mixer.music.load(f"{ sys.path[0] }/mp3s/{file_name}.mp3")
+#                 pygame.mixer.music.play()
+#                 print("Audio sample will play for 3 seconds\n\n")
+#                 time.sleep(3)
         # handle exception (exits program)
         except FileNotFoundError:
             print(
