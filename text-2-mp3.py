@@ -21,23 +21,22 @@ class GetAudio:
         self.path = path
         # function to assign accent code based on numerical choice
         def match_accent(accent):
-            match accent:
-                case "1":
-                    return "com.au"
-                case "2":
-                    return "co.uk"
-                case "3":
-                    return "com"
-                case "4":
-                    return "ca"
-                case "5":
-                    return "co.in"
-                case "6":
-                    return "ie"
-                case "7":
-                    return "co.za"
-                case _:
-                    return "com"
+            if accent == "1":
+                return "com.au"
+            elif accent == "2":
+                return "co.uk"
+            elif accent ==  "3":
+                return "com"
+            elif accent ==  "4":
+                return "ca"
+            elif accent ==  "5":
+                return "co.in"
+            elif accent ==  "6":
+                return "ie"
+            elif accent ==  "7":
+                return "co.za"
+            else:
+                return "com"
 
         self.accent = match_accent(accent)
 
@@ -107,6 +106,6 @@ def cli(path, accent):
     invoke_class = GetAudio(path, accent)
     invoke_class.create_mp3()
 
-
+# if you're main, and not remote, this will be invoked ; ) and start the program
 if __name__ == "__main__":
     cli()
