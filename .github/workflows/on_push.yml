@@ -42,7 +42,6 @@ jobs:
       - id: file_changes # see which file changed in the push
         uses: trilom/file-changes-action@v1.2.3
         with:
-          output: ''
           fileOutput: ''
       - name: test
         run: |
