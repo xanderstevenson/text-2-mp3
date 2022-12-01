@@ -57,7 +57,7 @@ class GetAudio:
                 file_name = ntpath.basename(self.path)
                 # strip file type extension from name
                 file_name = (
-                    file_name.replace(".txt", "").replace(".rtf", "").replace(".md", "")
+                    file_name.replace(".txt", "").replace(".md", "")
                 )
                 # save mp3
                 mp3.save(f"./mp3s/{file_name}.mp3")
