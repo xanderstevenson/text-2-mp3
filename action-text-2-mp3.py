@@ -110,7 +110,7 @@ def cli(path, accent):
 
 
 if __name__ == "__main__":
-    cli("readthis.txt", 3)
     the_filename = os.getenv('TEST_VAR').replace('[','').replace(']','')
-    print(the_filename)
+    cli(the_filename, 3)
+
 
