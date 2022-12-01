@@ -45,8 +45,14 @@ jobs:
           outout: ''
           fileOutput: ''
       - name: test
-        run: |
-          echo '${{ steps.file_changes.outputs.files_modified}}'
+      - run:   |
+         body=$({{steps.file_changes.outputs.files_modified}})
+         body="${body//[[\],.!]}"
+         echo "MOD_RELEASE_BODY=$body"
+         echo "MOD_RELEASE_BODY=$body" >> $GITHUB_ENV
+        shell: bash
+#        run:    |
+#          echo '${{ steps.file_changes.outputs.files_modified}}'
 
 # jobs:
 #   hello-world:
