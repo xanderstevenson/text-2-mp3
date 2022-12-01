@@ -46,7 +46,7 @@ jobs:
           fileOutput: ''
       - name: test
         run:    |
-         echo '${{ steps.file_changes.outputs.files_modified//[[\],.!]}}'
+          echo '${{ steps.file_changes.outputs.files_modified}}//[[\],.!]'
 
 # jobs:
 #   hello-world:
