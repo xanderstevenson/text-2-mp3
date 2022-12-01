@@ -110,4 +110,4 @@ def cli(path, accent):
 
 
 if __name__ == "__main__":
-    cli()
+    cli("long-test.txt", 3)
