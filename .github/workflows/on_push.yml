@@ -34,14 +34,16 @@ jobs:
           
           
       - name: test
-        env:
-          test_var: ${{ steps.file_changes.outputs.files_modified}}
+
         run:    |
           echo '${{ steps.file_changes.outputs.files_modified}}'   
           
       - name: execute py script # run file
-        run: python3 action-text-2-mp3.py
-          echo '${{ env.TEST_VAR }}'
+        env:
+          test_var: ${{ steps.file_changes.outputs.files_modified}}
+        run: |
+          python3 action-text-2-mp3.py
+          echo '${{ TEST_VAR }}'
 
 
       - name: Commit files # transfer the new files back into the repository
