@@ -57,7 +57,7 @@ class GetAudio:
                     file_name.replace(".txt", "").replace(".rtf", "").replace(".md", "")
                 )
                 # save mp3
-                mp3.save(f"{/mp3s/{file_name}.mp3")
+                mp3.save(f"/mp3s/{file_name}.mp3")
                 # Alert use of success and location of mp3
                 click.secho(
                     f"\n\nMP3 file created at { sys.path[0] }/mp3s/{file_name}.mp3\n\n",
