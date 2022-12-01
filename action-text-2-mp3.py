@@ -1,3 +1,6 @@
+## This is the version of text-2-mp3.py to be run in GitHub actions
+
+
 import sys
 import os
 import rich_click as click
@@ -110,8 +113,10 @@ def cli(path, accent):
 
 
 if __name__ == "__main__":
+    #import environmental variable from the GitHub actions workflow
+    # strip the brackets and quotes
     the_filename = "./" + os.getenv('TEST_VAR').replace('[','').replace(']','').replace('"','')
+    #run the program with the file and 3 for American accent
     cli(the_filename, 3)
-    print(f"the filename is {the_filename}")
 
 
