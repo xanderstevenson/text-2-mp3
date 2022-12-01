@@ -111,4 +111,4 @@ def cli(path, accent):
 
 if __name__ == "__main__":
 #     cli("readthis.txt", 3)
-    cli("*", 3)
+    cli("*.txt", 3)
