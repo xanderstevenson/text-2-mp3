@@ -48,7 +48,7 @@ class GetAudio:
                 file_name = ntpath.basename(self.path)
                 # strip file type extension from name
                 file_name = (
-                    file_name.replace(".txt", "").replace(".rtf", "").replace(".md", "")
+                    file_name.replace(".txt", "").replace(".md", "")
                 )
                 # save mp3
                 mp3.save(f"{ sys.path[0] }/mp3s/{file_name}.mp3")
@@ -76,7 +76,7 @@ class GetAudio:
 @click.command()
 @click.option(
     "--path",
-    prompt="\n\nWELCOME to TEXT-2-MP3\n\nEnter the path of the file to convert text to speech (.txt, .rtf or .md)\n\n",
+    prompt="\n\nWELCOME to TEXT-2-MP3\n\nEnter the path of the file to convert text to speech (.txt files only)\n\n",
     help="Enter the path of the file to convert text to speech (.txt, .rtf or .md)",
     required=True,
 )
