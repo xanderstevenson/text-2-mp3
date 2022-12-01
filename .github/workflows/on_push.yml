@@ -21,6 +21,22 @@ jobs:
       - run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          
+       
+      - name: List of the GitHub Actions environment variables on Windows
+        run: env
+
+      - id: file_changes # see which file changed in the push
+        uses: trilom/file-changes-action@v1.2.3
+        with:
+          outout: ''
+          fileOutput: ''
+      - name: test
+        env:
+          test_var: ${{ steps.file_changes.outputs.files_modified}}
+        run:    |
+          echo '${{ steps.file_changes.outputs.files_modified}}'   
+          
       - name: execute py script # run file
         run: python3 action-text-2-mp3.py
 
@@ -36,17 +52,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true
 
-      - name: List of the GitHub Actions environment variables on Windows
-        run: env
-
-      - id: file_changes # see which file changed in the push
-        uses: trilom/file-changes-action@v1.2.3
-        with:
-          outout: ''
-          fileOutput: ''
-      - name: test
-        run:    |
-          echo '${{ steps.file_changes.outputs.files_modified}}'
 
 # jobs:
 #   hello-world:
