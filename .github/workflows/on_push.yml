@@ -26,7 +26,7 @@ jobs:
 
       - name: Commit files # transfer the new files back into the repository
         run: |
-          git config --local user.name "jpadfield"
+          git config --local user.name "xanderstevenson"
           git add ./mp3s
           git commit -m "Updating the repository, mp3 in the ./mp3s folder"
       - name: Push changes # push the output folder to your repo
