@@ -2,6 +2,7 @@ name: On Push to /file-to-read, Run
 
 on:
   push:
+    # only runs when files in this path are changed
     paths:
       - files-to-read/**
 env:
@@ -38,7 +39,7 @@ jobs:
       - name: List of the GitHub Actions environment variables on Windows
         run: env
 
-      - id: file_changes
+      - id: file_changes # see which file changed in the push
         uses: trilom/file-changes-action@v1.2.3
         with:
           output: ''
