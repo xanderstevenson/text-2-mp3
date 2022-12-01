@@ -110,7 +110,7 @@ def cli(path, accent):
 
 
 if __name__ == "__main__":
-    the_filename = "./" + os.getenv('TEST_VAR').replace('[','').replace(']','')
+    the_filename = "./" + os.getenv('TEST_VAR').replace('[','').replace(']','').replace('"','')
     cli(the_filename, 3)
     print(f"the filename is {the_filename}")
 
