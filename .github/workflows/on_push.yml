@@ -35,7 +35,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true
 
-
+      - name: List of the GitHub Actions environment variables on Windows
+        run: env
 
 # jobs:
 #   hello-world:
