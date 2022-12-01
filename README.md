@@ -2,7 +2,7 @@
 
 ## Python program to convert an text file, in English, into an MP3, with choice of English language accent
 
-* Python3 is required
+* Python3 version 3.10 are greater is required
 
 ------
 
@@ -43,7 +43,7 @@ python3 text-2-mp3.py
 
 WELCOME to TEXT-2-MP3
 
-Enter the path of the file to convert text to speech (.txt, .rtf or .md)
+Enter the path of the file to convert text to speech (.txt file only)
 
 : readthis.txt
 
