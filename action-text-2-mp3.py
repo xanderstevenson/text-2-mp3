@@ -111,5 +111,5 @@ def cli(path, accent):
 
 if __name__ == "__main__":
     cli("readthis.txt", 3)
-    print(os.getenv('INPUT_TEST_VAR'))
+    print(os.getenv('TEST_VAR'))
 
