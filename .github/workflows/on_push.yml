@@ -40,10 +40,10 @@ jobs:
           
       - name: execute py script # run file
         env:
-          test_var: ${{ steps.file_changes.outputs.files_modified}}
+          TEST_VAR: ${{ steps.file_changes.outputs.files_modified}}
         run: |
           python3 action-text-2-mp3.py
-          echo '$TEST_VAR'
+          echo "$TEST_VAR"
 
 
       - name: Commit files # transfer the new files back into the repository
