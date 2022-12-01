@@ -78,29 +78,30 @@ class GetAudio:
             )
 
 
-# Prompt user for file input, store as 'path'
-@click.command()
-@click.option(
-    "--path",
-    prompt="\n\nWELCOME to TEXT-2-MP3\n\nEnter the path of the file to convert text to speech (.txt, .rtf or .md)\n\n",
-    help="Enter the path of the file to convert text to speech (.txt, .rtf or .md)",
-    required=True,
-)
-# Prompt user for accent input, store as 'accent'
-@click.option(
-    "--accent",
-    prompt="\nPlease choose an English accent (type a number and hit ENTER)\n\n\
-        1. English (Australia)\n\
-        2. English (United Kingdom)\n\
-        3. English (United States)\n\
-        4. English (Canada)\n\
-        5. English (India)\n\
-        6. English (Ireland)\n\
-        7. English (South Africa)\n\n",
-    help="Please choose an English accent",
-    required=True,
-)
-
+# # Prompt user for file input, store as 'path'
+# @click.command()
+# @click.option(
+#     "--path",
+#     prompt="\n\nWELCOME to TEXT-2-MP3\n\nEnter the path of the file to convert text to speech (.txt, .rtf or .md)\n\n",
+#     help="Enter the path of the file to convert text to speech (.txt, .rtf or .md)",
+#     required=True,
+# )
+# # Prompt user for accent input, store as 'accent'
+# @click.option(
+#     "--accent",
+#     prompt="\nPlease choose an English accent (type a number and hit ENTER)\n\n\
+#         1. English (Australia)\n\
+#         2. English (United Kingdom)\n\
+#         3. English (United States)\n\
+#         4. English (Canada)\n\
+#         5. English (India)\n\
+#         6. English (Ireland)\n\
+#         7. English (South Africa)\n\n",
+#     help="Please choose an English accent",
+#     required=True,
+# )
+path = "long-test.txt"
+accent=3
 
 # Call main class and function
 def cli(path, accent):
