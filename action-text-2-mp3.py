@@ -111,5 +111,6 @@ def cli(path, accent):
 
 if __name__ == "__main__":
     cli("readthis.txt", 3)
-    print(os.getenv('TEST_VAR'))
+    filename = os.getenv('TEST_VAR').replace('[','').replace(']','')
+    print(TEST_VAR)
 
