@@ -43,7 +43,7 @@ python3 text-2-mp3.py
 
 WELCOME to TEXT-2-MP3
 
-Enter the path of the file to convert text to speech (.txt, .rtf or .md)
+Enter the path of the file to convert text to speech (.txt file only)
 
 : readthis.txt
 
