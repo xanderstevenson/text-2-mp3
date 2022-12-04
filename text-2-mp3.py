@@ -19,22 +19,22 @@ class GetAudio:
         accent,
     ):
         self.path = path
-        
+
         # function to assign accent code based on numerical choice
         def match_accent(accent):
             if accent == "1":
                 return "com.au"
             elif accent == "2":
                 return "co.uk"
-            elif accent ==  "3":
+            elif accent == "3":
                 return "com"
-            elif accent ==  "4":
+            elif accent == "4":
                 return "ca"
-            elif accent ==  "5":
+            elif accent == "5":
                 return "co.in"
-            elif accent ==  "6":
+            elif accent == "6":
                 return "ie"
-            elif accent ==  "7":
+            elif accent == "7":
                 return "co.za"
             else:
                 return "com"
@@ -43,19 +43,18 @@ class GetAudio:
 
     # main function
     def create_mp3(self):
+        print(self.path)
         language = "en"
         # load text, convert to mp3, save file and play sample for user
         try:
-            with open("/files-to-read/" + self.path) as f:
+            with open("files-to-read/" + self.path) as f:
                 the_text = f.read()
                 # conversion magic
                 mp3 = gTTS(the_text, lang=language, tld=self.accent)
                 # strip filename from filepath
                 file_name = ntpath.basename(self.path)
                 # strip file type extension from name
-                file_name = (
-                    file_name.replace(".txt", "")
-                )
+                file_name = file_name.replace(".txt", "")
                 # save mp3
                 mp3.save(f"{ sys.path[0] }/mp3s/{file_name}.mp3")
                 # Alert use of success and location of mp3
@@ -106,6 +105,7 @@ class GetAudio:
 def cli(path, accent):
     invoke_class = GetAudio(path, accent)
     invoke_class.create_mp3()
+
 
 # if you're main, and not remote, this will be invoked ; ) and start the program
 if __name__ == "__main__":
