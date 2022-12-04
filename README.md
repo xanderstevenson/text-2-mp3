@@ -38,16 +38,16 @@ pip install -r requirements.txt
 
 5. Run Program
 ```
-python3 txt-2-mp3.py
+python3 txt-2-mp3.py 
 
 
 WELCOME to TXT-2-MP3
 
-Enter the file in the files-to-read folder to convert text to speech (.txt file only)
+Enter the .txt file in the files-to-read folder to convert from text to speech (example: 'readthis.txt').
 
 : readthis.txt
 
-Please choose an English Accent (type a number and hit ENTER)
+Please choose an English accent (type a number and hit ENTER)
 
         1. English (Australia)
         2. English (United Kingdom)
@@ -57,10 +57,11 @@ Please choose an English Accent (type a number and hit ENTER)
         6. English (Ireland)
         7. English (South Africa)
 
-: 4
+: 6
+files-to-read/readthis.txt
 
 
-MP3 file created at /txt-2-mp3/mp3s/readthis.mp3
+MP3 file created at /Users/xander/Documents/CiscoDevNet/code/mess-around/txt-2-mp3/mp3s/readthis.mp3
 
 
 Audio sample will play for 3 seconds
