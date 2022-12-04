@@ -58,7 +58,6 @@ Please choose an English accent (type a number and hit ENTER)
         7. English (South Africa)
 
 : 6
-files-to-read/readthis.txt
 
 
 MP3 file created at /Users/xander/Documents/CiscoDevNet/code/mess-around/txt-2-mp3/mp3s/readthis.mp3
