@@ -62,13 +62,13 @@ Please choose an English accent (type a number and hit ENTER)
 
 MP3 file created at /txt-2-mp3/mp3s/readthis.mp3
 
-
-Audio sample will play for 3 seconds
 ```
 
 * For a long text, such as several pages, it could take a few minuted for the mp3 file to be rendered.
 
 - MP3s are always saved to 'mp3s' folder one level down from txt-2-mp3.py
+
+- Automatic play of audio sample can be achieved by uncommenting a few lines of code, although overuse could damage your speakers. Mine started crackling after much debugging but a system restart cleared it up. Still, use at your own risk. I'm not responsible for any damages.
 
 - Tip: When pasting from a web page or Word doc, delete the image file names or it will read them (they are often long).
 
