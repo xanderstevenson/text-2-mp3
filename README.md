@@ -9,13 +9,13 @@
 
 1. Clone this repository
 ```
-git clone https://github.com/xanderstevenson/text-2-mp3
+git clone https://github.com/xanderstevenson/txt-2-mp3
 ```
 
 
-2. cd into test-2-mp3
+2. cd into txt-2-mp3
 ```
-cd text-2-mp3
+cd txt-2-mp3
 ```
 
 
@@ -38,12 +38,12 @@ pip install -r requirements.txt
 
 5. Run Program
 ```
-python3 text-2-mp3.py
+python3 txt-2-mp3.py
 
 
-WELCOME to TEXT-2-MP3
+WELCOME to TXT-2-MP3
 
-Enter the path of the file to convert text to speech (.txt file only)
+Enter the file in the files-to-read folder to convert text to speech (.txt file only)
 
 : readthis.txt
 
@@ -60,7 +60,7 @@ Please choose an English Accent (type a number and hit ENTER)
 : 4
 
 
-MP3 file created at /text-2-mp3/mp3s/readthis.mp3
+MP3 file created at /txt-2-mp3/mp3s/readthis.mp3
 
 
 Audio sample will play for 3 seconds
@@ -68,7 +68,7 @@ Audio sample will play for 3 seconds
 
 * For a long text, such as several pages, it could take a few minuted for the mp3 file to be rendered.
 
-- You can put the relative or absolute file path. MP3s are always saved to 'mp3s' folder one level down from python3 text-2-mp3.py
+- MP3s are always saved to 'mp3s' folder one level down from txt-2-mp3.py
 
 - Tip: When pasting from a web page or Word doc, delete the image file names or it will read them (they are often long).
 
