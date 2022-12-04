@@ -1,14 +1,12 @@
-name: On Push to /file-to-read, Run
-
+name: Create MP3 from TXT on Push to a certain directory
 on:
   push:
-    # only runs when files in this path are changed
+    # only runs when files in this path are changed, and they must end in .txt
     paths:
-      - files-to-read/**
+      - files-to-read/**.txt
 env:
   DEVOPS_DIR: devops
-
-
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,56 +20,32 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
-       
-      - name: List of the GitHub Actions environment variables on Windows
-        run: env
-
-      - id: file_changes # see which file changed in the push
+      - id: file_changes # see which file changed in the push, in '' string output
         uses: trilom/file-changes-action@v1.2.3
         with:
           outout: ''
           fileOutput: ''
-          
-          
-      - name: test
-
+       
+      - name: test # print modified and added files
         run:    |
-          echo '${{ steps.file_changes.outputs.files_modified}}'   
+          echo 'modified file(s) = ${{ steps.file_changes.outputs.files_modified}}'  
+          echo 'added file(s) = ${{ steps.file_changes.outputs.files_added}}'
           
       - name: execute py script # run file
         env:
-          TEST_VAR: ${{ steps.file_changes.outputs.files_modified}}
+          MODIFIED_FILE: ${{ steps.file_changes.outputs.files_modified}}
+          ADDED_FILE: ${{ steps.file_changes.outputs.files_added }}
         run: |
           python3 action-text-2-mp3.py
-          echo "$TEST_VAR"
-
-
+          
       - name: Commit files # transfer the new files back into the repository
         run: |
           git config --local user.name "xanderstevenson"
-          git add ./mp3s
-          git commit -m "Updating the repository, mp3 in the ./mp3s folder"
+          git add .
+          git commit -m "Updating the repository, with mp3 in the ./mp3s folder"
+          
       - name: Push changes # push the output folder to your repo
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true
-
-
-# jobs:
-#   hello-world:
-#     name: Hello world
-#     runs-on: ubuntu-latest
-#     steps:
-#     - name: Check-out devops repository
-#       uses: actions/checkout@v2
-#       with:
-#         repository: xanderstevenson/devops
-# #         token: ${{ secrets.GITHUB_TOKEN }}
-#         path: ${{ env.DEVOPS_DIR }}
-
-#     - name: Hello World
-#       run: python ${{ env.DEVOPS_DIR }}/hello_world.py
-#       shell: sh
-
-
