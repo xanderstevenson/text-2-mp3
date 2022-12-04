@@ -18,7 +18,7 @@ class GetAudio:
         path,
         accent,
     ):
-        self.path = path
+        self.path = "files-to-read/" + path
 
         # function to assign accent code based on numerical choice
         def match_accent(accent):
@@ -47,7 +47,7 @@ class GetAudio:
         language = "en"
         # load text, convert to mp3, save file and play sample for user
         try:
-            with open("files-to-read/" + self.path) as f:
+            with open(self.path) as f:
                 the_text = f.read()
                 # conversion magic
                 mp3 = gTTS(the_text, lang=language, tld=self.accent)
