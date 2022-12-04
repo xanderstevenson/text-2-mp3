@@ -1,3 +1,9 @@
+import sys
+import os
+import rich_click as click
+from gtts import gTTS
+import ntpath
+import time
 
 # without this, pygame prints a header in the console
 import contextlib
