@@ -4,7 +4,6 @@ import rich_click as click
 from gtts import gTTS
 import ntpath
 import time
-from progress.bar import FillingSquaresBar
 
 # without this, pygame prints a header in the console
 import contextlib
