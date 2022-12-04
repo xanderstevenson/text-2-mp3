@@ -1,6 +1,3 @@
-# txt-2-mp3
-
-
 <img src="https://github.com/xanderstevenson/txt-2-mp3/blob/main/media/txt-2-mp3-solid.png?raw=true" width=300) />
 
 
