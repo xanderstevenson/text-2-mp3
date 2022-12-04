@@ -43,7 +43,6 @@ class GetAudio:
 
     # main function
     def create_mp3(self):
-        print(self.path)
         language = "en"
         # load text, convert to mp3, save file and play sample for user
         try:
