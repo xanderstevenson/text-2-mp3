@@ -1,4 +1,4 @@
-# text-2-mp3
+# txt-2-mp3
 
 ## Python program to convert a .txt file, in English, into an MP3 audio file, with choice of English language accent
 
