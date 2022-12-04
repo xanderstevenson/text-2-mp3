@@ -1,4 +1,4 @@
-<p text-align="center"><img src="https://github.com/xanderstevenson/txt-2-mp3/blob/main/media/txt-2-mp3-colors.png?raw=true" width=300) /></p>
+<p align="center"><img src="https://github.com/xanderstevenson/txt-2-mp3/blob/main/media/txt-2-mp3-colors.png?raw=true" width=300) /></p>
 
 
 ## Python program to convert a .txt file, in English, into an MP3 audio file, with choice of English language accent
