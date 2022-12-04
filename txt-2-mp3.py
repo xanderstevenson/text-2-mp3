@@ -4,6 +4,7 @@ import rich_click as click
 from gtts import gTTS
 import ntpath
 import time
+from progress.bar import FillingSquaresBar
 
 # without this, pygame prints a header in the console
 import contextlib
@@ -54,7 +55,8 @@ class GetAudio:
                 file_name = ntpath.basename(self.path)
                 # strip file type extension from name
                 file_name = file_name.replace(".txt", "")
-                # save mp3
+                # save mp3, with progress bar for large files
+                bar = FillingSquaresBar("Processing", max=20)
                 mp3.save(f"{ sys.path[0] }/mp3s/{file_name}.mp3")
                 # Alert use of success and location of mp3
                 click.secho(
