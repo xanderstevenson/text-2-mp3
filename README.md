@@ -2,7 +2,7 @@
 
 ## Python program to convert an text file, in English, into an MP3, with choice of English language accent
 
-* Python3 version 3.10 are greater is required
+* Known to work on Python3 versions 3.9.11 and 3.10.3 (at least)
 
 ------
 
