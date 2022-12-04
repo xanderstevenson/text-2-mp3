@@ -81,7 +81,7 @@ class GetAudio:
 @click.command()
 @click.option(
     "--path",
-    prompt="\n\nWELCOME to TEXT-2-MP3\n\nEnter the .txt file in the files-to-read folder to convert from text to speech (example: 'readthis.txt').\n\n",
+    prompt="\n\nWELCOME to TXT-2-MP3\n\nEnter the .txt file in the files-to-read folder to convert from text to speech (example: 'readthis.txt').\n\n",
     help="Enter the file in the files-to-read folder to convert from text to speech (example: 'readthis.txt')",
     required=True,
 )
