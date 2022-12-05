@@ -8,7 +8,7 @@
 ------
 
 
-### 1. Clone this repository
+#### 1. Clone this repository
 ```
 git clone https://github.com/xanderstevenson/txt_2_mp3
 ```
