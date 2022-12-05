@@ -18,7 +18,7 @@ class GetAudio:
         path,
         accent,
     ):
-        self.path = "files-to-read/" + path
+        self.path = path
 
         # function to assign accent code based on numerical choice
         def match_accent(accent):
