@@ -1,7 +1,7 @@
 <p align="center"><img src="https://github.com/xanderstevenson/txt-2-mp3/blob/main/media/txt-2-mp3-colors.png?raw=true" width=400) /></p>
 
 
-## Python program to convert a .txt file, in English, into an MP3 audio file, with choice of English language accent
+## A Python program to convert a .txt file, in English, into an MP3 audio file, with choice of English language accent
 
 
 * Known to work on Python versions 3.7.13, 3.8.13, 3.9.11, 3.10.0, 3.10.3 and 3.10.8 (at least)
