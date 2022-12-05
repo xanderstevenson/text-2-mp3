@@ -15,7 +15,7 @@ git clone https://github.com/xanderstevenson/txt-2-mp3
 ```
 
 
-### 2. cd into txt-2-mp3
+### 2. cd into txt_2_mp3
 ```
 cd txt-2-mp3
 ```
@@ -40,10 +40,10 @@ pip install -r requirements.txt
 
 ### 5. Run Program
 ```
-$ python3 txt-2-mp3.py 
+$ python3 txt_2_mp3.py 
 
 
-WELCOME to TXT-2-MP3
+WELCOME to TXT_2_MP3
 
 Enter the .txt file in the files-to-read folder to convert from text to speech (example: 'readthis.txt').
 
@@ -62,7 +62,7 @@ Please choose an English accent (type a number and hit ENTER)
 : 6
 
 
-MP3 file created at /txt-2-mp3/mp3s/readthis.mp3
+MP3 file created at /txt_2_mp3/mp3s/readthis.mp3
 
 ```
 
