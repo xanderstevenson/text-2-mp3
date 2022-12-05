@@ -67,7 +67,7 @@ MP3 file created at /txt_2_mp3/mp3s/readthis.mp3
 
 * For a long text, such as several pages, it could take a few minuted for the mp3 file to be rendered.
 
-- MP3s are always saved to 'mp3s' folder one level down from txt-2-mp3.py
+- MP3s are always saved to 'mp3s' folder one level down from txt-2-mp3.py. If the 'mp3s' folder does not exist, it will be created.
 
 - Automatic play of audio sample can be achieved by uncommenting a few lines of code, although overuse could damage your speakers. Mine started crackling after playing these samples hundreds of times while debugging the main function but a system restart cleared it up. Still, use at your own risk. I'm not responsible for any damages.
 
