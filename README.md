@@ -14,13 +14,13 @@ git clone https://github.com/xanderstevenson/txt_2_mp3
 ```
 
 
-### 2. cd into txt_2_mp3
+#### 2. cd into txt_2_mp3
 ```
 cd txt_2_mp3
 ```
 
 
-### 3. Create and activate virtual environment
+#### 3. Create and activate virtual environment
 ```
 python3 -m venv venv
 
@@ -29,7 +29,7 @@ source venv/Scripts/activate # for Windows
 ```
 
 
-### 4. Install requirements
+#### 4. Install requirements
 ```
 pip install -r requirements.txt
 ```
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 
 
-### 5. Run Program
+#### 5. Run Program
 ```
 $ python3 txt_2_mp3.py 
 
