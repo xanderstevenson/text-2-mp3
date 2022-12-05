@@ -11,13 +11,13 @@
 
 ### 1. Clone this repository
 ```
-git clone https://github.com/xanderstevenson/txt-2-mp3
+git clone https://github.com/xanderstevenson/txt_2_mp3
 ```
 
 
 ### 2. cd into txt_2_mp3
 ```
-cd txt-2-mp3
+cd txt_2_mp3
 ```
 
 
