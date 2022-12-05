@@ -71,6 +71,8 @@ MP3 file created at /txt_2_mp3/mp3s/readthis.mp3
 
 - Automatic play of audio sample can be achieved by uncommenting a few lines of code, although overuse could damage your speakers. Mine started crackling after playing these samples hundreds of times while debugging the main function but a system restart cleared it up. Still, use at your own risk. I'm not responsible for any damages.
 
+- if the filename given does not exist, the program will exit. However, if the choice of accent is not within the range, the default of American English will be applied.
+
 - Tip: When pasting from a web page or Word doc, delete the image file names or it will read them (they are often long).
 
 
