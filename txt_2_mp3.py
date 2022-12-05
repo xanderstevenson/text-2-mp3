@@ -83,8 +83,8 @@ class GetAudio:
 @click.command()
 @click.option(
     "--path",
-    prompt="\n\nWELCOME to TXT-2-MP3\n\nEnter the .txt file in the files-to-read folder to convert from text to speech (example: 'readthis.txt').\n\n",
-    help="Enter the file in the files-to-read folder to convert from text to speech (example: 'readthis.txt')",
+    prompt="\n\nWELCOME to TXT-2-MP3\n\nEnter the path and filename of the .txt file, to convert from text to speech (example: 'readthis.txt').\n\n",
+    help="Enter the path and filename of the .txt file, to convert from text to speech (example: 'readthis.txt')",
     required=True,
 )
 # Prompt user for accent input, store as 'accent'
