@@ -44,7 +44,7 @@ $ python3 txt_2_mp3.py
 
 WELCOME to TXT_2_MP3
 
-Enter the .txt file in the files-to-read folder to convert from text to speech (example: 'readthis.txt').
+Enter the path and filename of the .txt file, to convert from text to speech (example: 'readthis.txt').
 
 : readthis.txt
 
