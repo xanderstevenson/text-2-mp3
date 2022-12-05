@@ -55,7 +55,7 @@ class GetAudio:
                 # strip file type extension from name
                 file_name = file_name.replace(".txt", "")
                 if not os.path.exists({ sys.path[0] } + '/mp3s/'):
-                    os.makedirs({ sys.path[0] } + '/mp3s/')
+                    os.makedirs(f"{ sys.path[0] }/mp3s/")
                     time.sleep(3)
                 # save mp3, with progress bar for large files
                 mp3.save(f"{ sys.path[0] }/mp3s/{file_name}.mp3")
