@@ -73,7 +73,7 @@ MP3 file created at /txt_2_mp3/mp3s/readthis.mp3
 
 - If the filename given does not exist, the program will exit. However, if the choice of accent is not within the range, the default of American English will be applied.
 
-- .docx files can be used, in certain circumstances. For exmample, creating a .docx file in your IDE and pasting in code may work, but using a .docx file which has been formatted in MS Word will result in an error.
+- .docx files can be used, in certain circumstances. For example, creating a .docx file in your IDE and pasting in code may work, but using a .docx file which has been formatted in MS Word will result in an error.
 
 - Tip: When pasting from a web page or Word doc, delete the image file names or it will read them (they are often long). Delete long numbers are any phrases which are not normally spoken, such as URLs.
 
